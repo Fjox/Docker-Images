@@ -1,5 +1,5 @@
 # Start from an Debian image with the latest version of Rust installed
-FROM rust:bookworm as build-env
+FROM rust:bookworm-slim as build-env
 
 LABEL maintainer="info@fjox.win"
 # Install git
@@ -9,7 +9,7 @@ RUN apt update && apt install -y git make
 RUN git clone https://git.fjox.win/mirror/vulpes-porto && mv -v vulpes-porto /temp && cd /temp && cargo build --release && mkdir /app && mv /temp/target/release/vulpes_porto /app/vulpes_porto && cd /app && rm -rfv /temp && touch FJOX.WIN && ls -laRh
 
 # Distributed image
-FROM debian:12
+FROM debian:12-slim
 RUN apt update && apt install curl -y
 
 # Copy compiled vulpes-porto into working directory
