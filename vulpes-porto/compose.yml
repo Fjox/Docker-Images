@@ -1,0 +1,15 @@
+services:
+  vulpes-porto:
+    image: git.fjox.win/fjox/vulpes-porto:latest
+    container_name: foxes.download-vulpes-porto
+    restart: unless-stopped
+    volumes:
+      - ./foxes:/foxes
+     # - ./vulpes-porto:/app
+      - ./vulpes-porto/config.yaml:/app/config.yaml
+      - ./vulpes-porto/vulpesporto.db:/app/vulpesporto.db
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 64M

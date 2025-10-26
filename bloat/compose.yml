@@ -1,0 +1,16 @@
+services:
+  bloat:
+    image: git.fjox.win/fjox/bloat
+    container_name: bloat
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    volumes:
+      - ./bloat.conf:/app/bloat.conf
+    cap_add:
+      - SYS_NICE
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 32M
