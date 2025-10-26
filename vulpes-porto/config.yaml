@@ -1,0 +1,42 @@
+# Instance address
+server: "https://foxes.download"
+
+# Token for the account
+token: "YOUR ACCOUNT TOKEN"
+
+# Path to remote or local file with links (see readme)
+image_json: "sources.json"
+
+# Array with times for posting
+times:
+  - "12:00"
+
+# Defines if given times are in UTC or local time (UTC recommended due to potential daylight saving issues)
+use_utc: false
+
+# Path defining where to store internal database
+internal_database: "./vulpesporto.db"
+
+# Optional tags for posts
+tags: "#fox #bot"
+
+# Required setting if using locally stored images, defines root folder for local images
+local_path: "/foxes"
+
+# Limits which messages are logged
+log_level: "Info"
+
+# Use syslog style for logging
+use_syslog_style: true
+
+# Delay in seconds for retrying
+retry_time: 600
+
+# Set status visibility by sequence that is repeated
+# Overrides status_visibility if sequence is defined
+# Array of visibilities or pairs for simpler defining of multiple in row with same visibility
+# e.g. 1 public post, 9 unlisted and then again 1 public, 9 unlisted, ...
+# Possible values: public, unlisted, private, direct
+status_visibility_sequence:
+  - "public"
+  - ["unlisted", 9]
