@@ -6,7 +6,7 @@ LABEL maintainer="info@fjox.win"
 RUN apt update && apt install -y git make
 
 # Build bloat
-RUN git clone https://git.fjox.win/Fjox/bloat-docker && mv -v bloat-docker /app && cd /app && touch FJOX.WIN && make 
+RUN git clone https://git.fjox.win/Fjox/8bloat && mv -v bloat-docker /app && cd /app && touch FJOX.WIN && make 
 
 # Distributed image
 FROM debian:12
