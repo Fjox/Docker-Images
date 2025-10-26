@@ -1,7 +1,7 @@
 services:
   bloat:
     image: git.fjox.win/fjox/bloat
-    container_name: bloat
+    container_name: bloat-tor
     ports:
       - "8080:8080"
     restart: unless-stopped
@@ -9,6 +9,8 @@ services:
       - ./bloat.conf:/app/bloat.conf
     cap_add:
       - SYS_NICE
+    extra_hosts:
+      - "v3oniondomainhereioshgposihgpyosh.onion:webserverip"
     deploy:
       resources:
         limits:
