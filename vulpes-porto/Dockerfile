@@ -1,5 +1,5 @@
 # Start from an Debian image with the latest version of Rust installed
-FROM rust:bookworm-slim as build-env
+FROM rust:bookworm as build-env
 
 LABEL maintainer="info@fjox.win"
 # Install git
