@@ -4,9 +4,8 @@ a collection of dockerfiles and theyer acompanieng compose files that @Fjox made
 ## Software
 
 [8bloat](./8bloat)\
-[aptly](./aptly)\
 [bloat](./bloat)\
 [bloat-tor](./bloat-tor)\
+[minio-admin-panel](./minio-admin-panel)\
 [Vulpes Porto](./vulpes-porto)\
-[](./)\
 [](./)\
