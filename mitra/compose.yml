@@ -1,0 +1,15 @@
+services:
+  mitra:
+    image: git.fjox.win/fjox/mitra
+    container_name: xsrv-deepweb-test-mitra
+    ports:
+      - "9008:9008"
+    restart: unless-stopped
+    volumes:
+      - ./mitra/config.yaml:/etc/mitra/config.yaml
+      - ./mitra/data:/var/lib/mitra
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 256M
