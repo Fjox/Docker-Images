@@ -9,7 +9,7 @@ RUN apt update && apt install -y git make
 RUN git clone https://git.fjox.win/mirror/bloat && mv -v bloat /app && cd /app && touch FJOX.WIN && make 
 
 # Distributed image
-FROM debian:12
+FROM debian:12-slim
 RUN apt update && apt install curl -y
 
 # Copy compiled bloat into working directory
