@@ -6,7 +6,7 @@ LABEL maintainer="info@fjox.win"
 RUN apt update && apt install -y git make
 
 # Build mitra
-RUN git clone https://git.fjox.win/mirror/mitra && mv -v mitra /temp && cd /temp && cargo build --release --features production && mkdir /app && mv /temp/target/release/mitra /app/mitra && cd /app && rm -rfv /temp && touch FJOX.WIN && ls -laRh
+RUN git clone https://git.fjox.win/mirror/mitra && mv -v mitra /temp && cd /temp && cargo build --release --features production && mkdir /app && mv /temp/target/release/mitra /app/mitra && cd /app && rm -rfv /temp && git clone https://git.fjox.win/mirror/mitra-web && mv mitra-web www && touch FJOX.WIN && ls -laRh
 
 # Distributed image
 FROM debian:12-slim
