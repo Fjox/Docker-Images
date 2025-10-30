@@ -7,5 +7,7 @@ a collection of dockerfiles and theyer acompanieng compose files that @Fjox made
 [bloat](./bloat)\
 [bloat-tor](./bloat-tor)\
 [minio-admin-panel](./minio-admin-panel)\
+[mitra](./mitra)\
 [Vulpes Porto](./vulpes-porto)\
+[](./)\
 [](./)\
