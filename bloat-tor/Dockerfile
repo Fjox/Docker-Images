@@ -10,7 +10,6 @@ RUN git clone https://git.fjox.win/Fjox/bloat-tor && mv -v bloat-tor /app && cd 
 
 # Distributed image
 FROM debian:12-slim
-RUN apt update && apt install curl -y
 
 # Copy compiled bloat into working directory
 WORKDIR /app
