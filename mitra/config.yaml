@@ -99,8 +99,8 @@ registration:
 #  # Proxy for outgoing requests to .i2p targets
 #  #i2p_proxy_url: 'socks5h://127.0.0.1:4447'
 #  # Timeouts (seconds)
-#  #fetcher_timeout: 30
-#  #deliverer_timeout: 10
+#  #fetcher_timeout: 300
+#  #deliverer_timeout: 100
 
 # OpenMetrics endpoint (/metrics)
 #metrics:
