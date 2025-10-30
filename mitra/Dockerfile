@@ -20,4 +20,4 @@ COPY --from=build-env /app /app
 RUN apt update && apt install -y curl
 
 # Run the app by default when the container starts
-CMD ["/app/mitra"]
+CMD ["/app/mitra","server"]
