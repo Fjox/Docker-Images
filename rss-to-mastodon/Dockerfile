@@ -10,7 +10,5 @@ ENV SKIP_TAGS ""
 # Install deps and create basedirs
 RUN mkdir /app && mkdir /app/hashdir && cd /app && pip install feedparser requests && apt install curl -y && curl https://git.fjox.win/Fjox/rss-to-mastodon/raw/branch/main/run.py
 
-COPY run.py /app/
-
 WORKDIR /app
 CMD ["python","/app/run.py"]
