@@ -9,7 +9,7 @@ Iamges can be pulled from <registry>/fjox/<software>
 [bloat-tor](./bloat-tor)\
 [minio-admin-panel](./minio-admin-panel) (WIP)\
 [mitra](./mitra)\
-[rss-to-mastodon](./rss-to-mastodon)\
+[rss-to-mastodon](./rss-to-mastodon) (highly expermental)\
 [Vulpes Porto](./vulpes-porto)\
 [](./)\
 [](./)\
