@@ -1,0 +1,18 @@
+services:
+  rss-to-mastodon:
+    image: git.fjox.win/fjox/rss-to-mastodon
+    container_name: rss-to-mastodon
+    environment:
+        - MASTODON_TOKEN=token
+        - MASTODON_URL=https://hostnetwork.xyz
+        #- SKIP_TAGS=howto,opinion
+        #- DRY_RUN=Y
+    restart: unless-stopped
+    volumes:
+      - ./feeds.json:/app/feeds.json
+      - ./hashdir:/hashdir
+    deploy:
+      resources:
+        limits:
+          cpus: '0.1'
+          memory: 32M
