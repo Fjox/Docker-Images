@@ -1,0 +1,15 @@
+services:
+  mitra:
+    image: fjox/mitra-s3
+    container_name: mitra-s3
+    ports:
+      - "9020:9020"
+    restart: unless-stopped
+    volumes:
+      - ./mitra/config.yaml:/etc/mitra/config.yaml
+      - ./mitra/data:/app/data
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M

@@ -16,6 +16,6 @@ DEBIAN_VERSION= What rust docker image to pull, NOTE: Only use debian images. De
 docker build -t git.fjox.win/fjox/mitra:4.12.0 --build-arg MITRA_VERSION=v4.12.0 --build-arg NODE_VERSION=24 --build-arg DEBIAN_VERSION=bookworm --no-cache .
 ```
 
-### media-storage-s3
+### Object Storage
 
-Dockerfile for that branch can be found at [Dockerfile_S3](./Dockerfile_S3)\
+The object storage branch can be found at [Mitra-S3](../mitra-s3)\
