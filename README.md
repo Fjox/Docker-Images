@@ -3,7 +3,7 @@ a collection of dockerfiles and theyer acompanieng compose files that @Fjox made
 
 ## Software
 
-Iamges can be pulled from <registry>/fjox/<software>
+Iamges can be pulled from %registry%/fjox/%software%\
 [8bloat](./8bloat)\
 [bloat](./bloat)\
 [bloat-tor](./bloat-tor)\
