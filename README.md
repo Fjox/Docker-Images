@@ -12,5 +12,7 @@ Iamges can be pulled from %registry%/fjox/%software%\
 [Mitra-S3](./mitra-s3)\
 [rss-to-mastodon](./rss-to-mastodon) (highly expermental)\
 [Vulpes Porto](./vulpes-porto)\
-[](./)\
+[openclaw](./openclaw) (WIP)\
+[shkeeper](./shkeeper) (WIP)\
+[vidsrc-scraper](./vidsrc-scraper) (WIP)\
 [](./)\
