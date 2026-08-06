@@ -1,0 +1,5 @@
+FROM node:24-bookworm
+RUN npm install -g openclaw
+WORKDIR /home/openclaw
+EXPOSE 18789
+CMD ["openclaw", "gateway", "start"]

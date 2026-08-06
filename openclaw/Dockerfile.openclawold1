@@ -1,0 +1,7 @@
+FROM node:24-bookworm
+LABEL maintainer="info@fjox.win"
+WORKDIR /app
+SHELL ["/bin/bash", "-c"]
+RUN curl -fsSL https://bun.sh/install | bash && cd /app && touch FJOX.WIN && apt update && apt install -y git && git clone https://github.com/openclaw/openclaw && echo clone && npm i pnpm && alias pnpm='PATH=$(npx pnpm):$PATH' && echo npx pass && source /root/.bashrc && echo pre1 && npm install --frozen-lockfile && echo pass 1 && npx pnpm build  && echo pass 2 && npx pnpm ui:build
+ENV NODE_ENV=production
+CMD ["node", "openclaw.mjs", "gateway", "--allow-unconfigured"]
