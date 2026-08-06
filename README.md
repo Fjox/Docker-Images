@@ -10,10 +10,10 @@ Iamges can be pulled from %registry%/fjox/%software%\
 [minio-admin-panel](./minio-admin-panel) (WIP)\
 [Mitra](./mitra)\
 [Mitra-S3](./mitra-s3)\
-[rss-to-mastodon](./rss-to-mastodon) (highly expermental)\
-[Vulpes Porto](./vulpes-porto)\
 [openclaw](./openclaw) (WIP)\
+[Postfix](./postfix) (WIP)\
+[rss-to-mastodon](./rss-to-mastodon) (highly expermental)\
 [shkeeper](./shkeeper) (WIP)\
 [vidsrc-scraper](./vidsrc-scraper) (WIP)\
-[postfix](./postfix) (WIP)\
+[Vulpes Porto](./vulpes-porto)\
 [](./)\
