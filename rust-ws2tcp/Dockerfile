@@ -7,8 +7,7 @@ FROM rust:${DEBIAN_VERSION} as build-env
 #args
 ARG VERSION="main"
 #add build env
-ENV MITRA_VERSION="${MITRA_VERSION}"
-ENV NODE_VERSION="${NODE_VERSION}"
+ENV VERSION="${VERSION}"
 
 LABEL maintainer="info@fjox.win"
 # Install git
