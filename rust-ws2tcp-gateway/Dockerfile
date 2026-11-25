@@ -29,4 +29,4 @@ COPY --from=build-env /app /app
 RUN apt update && apt install -y curl
 
 # Run the app by default when the container starts
-CMD ["/app/rust-ws2tcp-gateway","server"]
+ENTRYPOINT ["/app/rust-ws2tcp-gateway"]
