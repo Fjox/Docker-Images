@@ -30,3 +30,4 @@ RUN apt update && apt install -y curl
 
 # Run the app by default when the container starts
 ENTRYPOINT ["/app/rust-ws2tcp-gateway"]
+CMD ["-p","8080"]
