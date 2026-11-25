@@ -12,5 +12,5 @@ DEBIAN_VERSION= What rust docker image to pull, NOTE: Only use debian images. De
 
 ### Build command example:
 ```
-docker build -t git.fjox.win/fjox/rust-ws2tcp-gateway:1.1.1 --build-arg VERSION=v1.1.1 --build-arg DEBIAN_VERSION=trixie-slim --no-cache .
+docker build -t git.fjox.win/fjox/rust-ws2tcp-gateway:1.1.1 --build-arg VERSION=v1.1.1 --build-arg DEBIAN_VERSION=slim-trixie --no-cache .
 ```
