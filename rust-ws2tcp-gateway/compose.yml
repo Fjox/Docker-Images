@@ -1,0 +1,14 @@
+services:
+  mitra:
+    image: fjox/rust-ws2tcp-gateway
+    container_name: rust-ws2tcp-gateway
+    enviroment:
+      : "2"
+    ports:
+      - "9031:8080"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 256M
