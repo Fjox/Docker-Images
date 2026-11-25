@@ -14,7 +14,7 @@ LABEL maintainer="info@fjox.win"
 RUN apt update && apt install -y git make
 
 # Build mitra
-RUN git clone https://github.com/bouroo/rs-wsProxy --branch=$VERSION && mv -v rs-wsProxy /temp && cd /temp && cargo build --release && mkdir /app && mv /temp/target/release/rs-wsProxy /app/rust-ws2tcp && cd /app && rm -rfv /temp && touch FJOX.WIN
+RUN git clone https://github.com/bouroo/rs-wsProxy --branch=$VERSION && mv -v rs-wsProxy /temp && cd /temp && cargo build --release && mkdir /app && mv /temp/target/release/rs-wsProxy /app/rust-ws2tcp-gateway && cd /app && rm -rfv /temp && touch FJOX.WIN
 
 # Distributed image
 FROM debian:${DEBIAN_VERSION}
@@ -29,4 +29,4 @@ COPY --from=build-env /app /app
 RUN apt update && apt install -y curl
 
 # Run the app by default when the container starts
-CMD ["/app/rust-ws2tcp","server"]
+CMD ["/app/rust-ws2tcp-gateway","server"]
