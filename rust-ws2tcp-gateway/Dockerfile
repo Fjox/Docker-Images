@@ -28,6 +28,8 @@ COPY --from=build-env /app /app
 # make sure libssl.so.1.1 is available
 RUN apt update && apt install -y curl
 
+EXPOSE 8080
+
 # Run the app by default when the container starts
 ENTRYPOINT ["/app/rust-ws2tcp-gateway"]
 CMD ["-p","8080"]
