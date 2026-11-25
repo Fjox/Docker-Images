@@ -1,0 +1,15 @@
+services:
+  rust-ws2tcp-gateway:
+    image: fjox/rust-ws2tcp-gateway
+    container_name: rust-ws2tcp-gateway
+    environment:
+      WSPROXY_THREADS: "2"
+      WSPROXY_ALLOW: "10.0.4.1:3389,10.0.4.3:22"
+    ports:
+      - "9031:8080"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 256M
